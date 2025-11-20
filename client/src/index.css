@@ -28,8 +28,8 @@
   --popover-border: 0 0% 93%;
   --primary: 178 72% 38%;
   --primary-foreground: 0 0% 98%;
-  --secondary: 0 0% 94%;
-  --secondary-foreground: 0 0% 9%;
+  --secondary: 24 95% 53%;
+  --secondary-foreground: 0 0% 98%;
   --muted: 0 0% 95%;
   --muted-foreground: 0 0% 40%;
   --accent: 178 8% 93%;
@@ -43,7 +43,7 @@
   --chart-3: 197 71% 48%;
   --chart-4: 178 55% 28%;
   --chart-5: 24 85% 38%;
-  --font-sans: Open Sans, sans-serif;
+  --font-sans: Inter, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
   --radius: .5rem;
@@ -112,8 +112,8 @@
   --popover-border: 0 0% 15%;
   --primary: 178 72% 38%;
   --primary-foreground: 0 0% 98%;
-  --secondary: 0 0% 15%;
-  --secondary-foreground: 0 0% 95%;
+  --secondary: 24 95% 53%;
+  --secondary-foreground: 0 0% 98%;
   --muted: 0 0% 13%;
   --muted-foreground: 0 0% 60%;
   --accent: 178 8% 14%;
