@@ -38,18 +38,18 @@ export default function WhyBrokerCalls() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, idx) => (
             <Card
               key={idx}
-              className="p-8 hover-elevate transition-all duration-300"
+              className="p-8 hover-elevate active-elevate-2 transition-all duration-300 border-2"
               data-testid={`card-feature-${idx}`}
             >
-              <div className="space-y-4">
-                <div className="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <feature.icon className="w-8 h-8 text-primary" />
+              <div className="space-y-5">
+                <div className="w-16 h-16 rounded-xl bg-primary/15 flex items-center justify-center">
+                  <feature.icon className="w-9 h-9 text-primary" strokeWidth={2.5} />
                 </div>
-                <h3 className="text-xl font-semibold">{feature.title}</h3>
+                <h3 className="text-xl font-bold">{feature.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>

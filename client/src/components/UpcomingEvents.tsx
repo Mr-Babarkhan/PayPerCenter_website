@@ -31,11 +31,11 @@ export default function UpcomingEvents() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-10">
           {events.map((event, idx) => (
             <Card
               key={idx}
-              className="overflow-hidden hover-elevate transition-all duration-300 cursor-pointer"
+              className="overflow-hidden hover-elevate active-elevate-2 transition-all duration-300 cursor-pointer group border-2"
               data-testid={`card-event-${idx}`}
               onClick={() => console.log(`Navigate to ${event.title}`)}
             >
@@ -43,14 +43,14 @@ export default function UpcomingEvents() {
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6 space-y-2">
-                <h3 className="text-xl font-semibold">{event.title}</h3>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Calendar className="w-4 h-4" />
-                  <span className="text-sm">{event.date}</span>
+              <div className="p-6 space-y-3">
+                <h3 className="text-xl font-bold">{event.title}</h3>
+                <div className="flex items-center gap-2 text-primary">
+                  <Calendar className="w-5 h-5" strokeWidth={2.5} />
+                  <span className="text-sm font-semibold">{event.date}</span>
                 </div>
               </div>
             </Card>

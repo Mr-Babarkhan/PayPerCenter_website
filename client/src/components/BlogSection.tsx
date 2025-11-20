@@ -33,11 +33,11 @@ export default function BlogSection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Blog</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           {blogPosts.map((post, idx) => (
             <Card
               key={idx}
-              className="overflow-hidden hover-elevate transition-all duration-300 cursor-pointer group"
+              className="overflow-hidden hover-elevate active-elevate-2 transition-all duration-300 cursor-pointer group border-2"
               data-testid={`card-blog-${idx}`}
               onClick={() => console.log(`Navigate to ${post.title}`)}
             >
@@ -45,20 +45,20 @@ export default function BlogSection() {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6 space-y-3">
-                <p className="text-xs text-muted-foreground">{post.date}</p>
-                <h3 className="text-lg font-semibold leading-tight line-clamp-2">
+              <div className="p-6 space-y-4">
+                <p className="text-xs font-semibold text-primary uppercase tracking-wider">{post.date}</p>
+                <h3 className="text-lg font-bold leading-tight line-clamp-2 min-h-[3.5rem]">
                   {post.title}
                 </h3>
                 <button
-                  className="text-primary text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all"
+                  className="text-primary text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all"
                   data-testid={`button-read-post-${idx}`}
                 >
                   Read Post
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
                 </button>
               </div>
             </Card>
