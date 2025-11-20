@@ -73,7 +73,7 @@ export default function Footer() {
 
         <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-3">
-            <img src="/logo.jpg" alt="Pay Per Calls" className="w-10 h-10 rounded-full object-cover" />
+            <img src="/logo.png" alt="Pay Per Calls" className="w-10 h-10 rounded-full object-cover" />
             <span className="font-bold">Pay Per Calls</span>
           </div>
           <p className="text-sm text-muted-foreground">

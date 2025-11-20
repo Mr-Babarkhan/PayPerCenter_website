@@ -26,7 +26,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-primary text-primary text-base font-bold px-10 py-6 hover:bg-primary hover:text-primary-foreground transition-all"
+                className="bg-white border-2 border-green-600 text-green-700 text-base font-bold px-10 py-6 hover:bg-green-600 hover:text-white transition-all"
                 data-testid="button-hero-buy"
                 onClick={() => console.log('Buy Calls clicked')}
               >
@@ -35,7 +35,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="default"
-                className="bg-primary hover:bg-primary/90 text-base font-bold px-10 py-6 shadow-lg shadow-primary/30 transition-all"
+                className="bg-green-600 hover:bg-green-700 text-white text-base font-bold px-10 py-6 shadow-lg shadow-green-600/30 transition-all"
                 data-testid="button-hero-sell"
                 onClick={() => console.log('Sell Calls clicked')}
               >

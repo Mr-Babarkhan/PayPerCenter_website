@@ -65,7 +65,7 @@ export default function BlogSection() {
           ))}
         </div>
 
-        <div className="text-center">
+        <div className="text-center ">
           <Button
             variant="default"
             data-testid="button-read-blog"

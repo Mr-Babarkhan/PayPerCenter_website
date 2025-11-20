@@ -35,7 +35,7 @@ export default function Header() {
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-3">
-              <img src="/logo.jpg" alt="Pay Per Calls" className="w-10 h-10 rounded-full object-cover" />
+              <img src="/logo.png" alt="Pay Per Calls" className="w-10 h-10 rounded-full object-cover" />
               <span className="text-xl font-bold">Pay Per Calls</span>
             </div>
           </div>
@@ -92,22 +92,22 @@ export default function Header() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
-            <Button
-              variant="outline"
-              className="border-primary text-primary"
-              data-testid="button-buy-calls"
-              onClick={() => console.log('Buy Calls clicked')}
-            >
-              BUY CALLS
-            </Button>
-            <Button
-              variant="default"
-              className="bg-secondary hover:bg-secondary/90"
-              data-testid="button-sell-calls"
-              onClick={() => console.log('Sell Calls clicked')}
-            >
-              SELL CALLS
-            </Button>
+             <Button
+            variant="outline"
+            className="bg-white border-2 border-white text-green-700 hover:bg-blue-50"
+            data-testid="button-buy-calls"
+            onClick={() => console.log('Buy Calls clicked')}
+          >
+            BUY CALLS
+          </Button>
+          <Button
+            variant="outline"
+            className="bg-white border-2 border-white text-green-700 hover:bg-blue-50"
+            data-testid="button-sell-calls"
+            onClick={() => console.log('Sell Calls clicked')}
+          >
+            SELL CALLS
+          </Button>
           </div>
 
           <button
