@@ -29,12 +29,12 @@ export default function WhyBrokerCalls() {
     <section className="w-full py-20 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="text-primary text-sm font-semibold mb-2">Why BrokerCalls™?</p>
+          <p className="text-primary text-sm font-semibold mb-2">Why Pay Per Calls™?</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Our Lead Generation Services<br />Drive New Business
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Grow your company using BrokerCalls™' lead generation solutions. Our mission is to help your company grow faster and more efficiently. Our advanced pay-per-call marketing technologies and strategies allow our highly-skilled team, formed by industry experts, to deliver performance that is second to none.
+            Grow your company using Pay Per Calls™' lead generation solutions. Our mission is to help your company grow faster and more efficiently. Our advanced pay-per-call marketing technologies and strategies allow our highly-skilled team, formed by industry experts, to deliver performance that is second to none.
           </p>
         </div>
 

@@ -34,11 +34,9 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-xl">★</span>
-              </div>
-              <span className="text-xl font-bold">BrokerCalls</span>
+            <div className="flex items-center gap-3">
+              <img src="/logo.jpg" alt="Pay Per Calls" className="w-10 h-10 rounded-full object-cover" />
+              <span className="text-xl font-bold">Pay Per Calls</span>
             </div>
           </div>
 

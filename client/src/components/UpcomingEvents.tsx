@@ -27,7 +27,7 @@ export default function UpcomingEvents() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Upcoming Events</h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Meet the BrokerCalls™ team in person! We attend industry events throughout the year and love connecting with current and potential partners. Check out past and upcoming events in the list below.
+            Meet the Pay Per Calls™ team in person! We attend industry events throughout the year and love connecting with current and potential partners. Check out past and upcoming events in the list below.
           </p>
         </div>
 

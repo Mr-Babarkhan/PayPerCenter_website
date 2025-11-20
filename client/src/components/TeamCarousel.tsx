@@ -14,7 +14,7 @@ export default function TeamCarousel() {
     <section className="w-full py-20 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet the BrokerCalls™ Team!</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet the Pay Per Calls™ Team!</h2>
           <p className="text-base md:text-lg text-muted-foreground">
             Our team is made up of some of the best in the industry. Check out our roster via the link below.
           </p>

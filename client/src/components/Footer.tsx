@@ -72,14 +72,12 @@ export default function Footer() {
         </div>
 
         <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-md flex items-center justify-center">
-              <span className="text-white font-bold text-xl">★</span>
-            </div>
-            <span className="font-bold">BrokerCalls</span>
+          <div className="flex items-center gap-3">
+            <img src="/logo.jpg" alt="Pay Per Calls" className="w-10 h-10 rounded-full object-cover" />
+            <span className="font-bold">Pay Per Calls</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © 2025 BrokerCalls™. All rights reserved.
+            © 2025 Pay Per Calls™. All rights reserved.
           </p>
         </div>
       </div>

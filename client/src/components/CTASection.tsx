@@ -14,7 +14,7 @@ export default function CTASection() {
             Ready to expand your business?
           </h2>
           <p className="text-lg md:text-xl text-primary-foreground/90">
-            BrokerCalls™ offers highly qualified inbound calls and phone leads. Reach out and get started today.
+            Pay Per Calls™ offers highly qualified inbound calls and phone leads. Reach out and get started today.
           </p>
           <div>
             <Button
