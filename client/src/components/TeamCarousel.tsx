@@ -2,11 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const teamMembers = [
-  { name: "Jorge Garcia", initials: "JG", image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Jorge" },
-  { name: "Chesney Miller", initials: "CM", image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Chesney" },
-  { name: "Stacey Makin", initials: "SM", image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Stacey" },
-  { name: "Peter Williams", initials: "PW", image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Peter" },
-  { name: "David Chen", initials: "DC", image: "https://api.dicebear.com/7.x/avataaars/svg?seed=David" },
+  { name: "Shoaib Khan", initials: "JG", image: "2.jpeg" },
+  { name: "Hanzala Bashir", initials: "CM", image: "./1.jpeg" },
+  { name: "Arslan Sarwar", initials: "SM", image: "big.png" },
+  { name: "Rafia", initials: "SM", image: "https://api.dicebear.com/7.x/notionists/svg?seed=Stacey" },
 ];
 
 export default function TeamCarousel() {
@@ -22,10 +21,10 @@ export default function TeamCarousel() {
 
         <div className="relative overflow-hidden mb-8">
           <div className="flex gap-8 justify-center flex-wrap">
-            {[...teamMembers, ...teamMembers].map((member, idx) => (
+            {teamMembers.map((member, idx) => (
               <div
                 key={idx}
-                className="flex flex-col items-center gap-3 hover-elevate transition-transform p-4 rounded-lg cursor-pointer"
+                className="flex flex-col items-center gap-3 hover:scale-105 transition-transform p-4 rounded-lg cursor-pointer"
                 data-testid={`avatar-team-${idx}`}
                 onClick={() => console.log(`View ${member.name} profile`)}
               >
@@ -35,6 +34,9 @@ export default function TeamCarousel() {
                     {member.initials}
                   </AvatarFallback>
                 </Avatar>
+                <p className="font-semibold text-sm md:text-base text-center">
+                  {member.name}
+                </p>
               </div>
             ))}
           </div>

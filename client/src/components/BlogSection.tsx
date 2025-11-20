@@ -50,9 +50,9 @@ export default function BlogSection() {
               </div>
               <div className="p-6 space-y-4">
                 <p className="text-xs font-semibold text-primary uppercase tracking-wider">{post.date}</p>
-                <h3 className="text-lg font-bold leading-tight line-clamp-2 min-h-[3.5rem]">
-                  {post.title}
-                </h3>
+                <h3 className="text-lg font-bold leading-tight">
+  {post.title}
+</h3>
                 <button
                   className="text-primary text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all"
                   data-testid={`button-read-post-${idx}`}

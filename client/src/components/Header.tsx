@@ -40,6 +40,7 @@ export default function Header() {
             </div>
           </div>
 
+          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <div
@@ -55,6 +56,7 @@ export default function Header() {
                   {item.label}
                   <ChevronDown className="w-4 h-4" />
                 </button>
+
                 {activeDropdown === item.label && (
                   <div className="absolute top-full left-0 mt-1 w-48 bg-popover border border-popover-border rounded-md shadow-lg py-2">
                     {item.items.map((subItem) => (
@@ -75,6 +77,7 @@ export default function Header() {
                 )}
               </div>
             ))}
+
             <button
               data-testid="button-nav-flights"
               className="px-4 py-2 text-sm font-medium hover-elevate rounded-md"
@@ -82,34 +85,38 @@ export default function Header() {
             >
               Flights
             </button>
-            <button
+
+            {/* Contact Us → Email */}
+            <a
+              href="mailto:shoaibkhan@leaderscoverage.com"
               data-testid="button-nav-contact"
               className="px-4 py-2 text-sm font-medium hover-elevate rounded-md"
-              onClick={() => console.log('Navigate to Contact Us')}
             >
               Contact Us
-            </button>
+            </a>
           </nav>
 
+          {/* Desktop BUY/SELL Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-             <Button
-            variant="outline"
-            className="bg-white border-2 border-white text-green-700 hover:bg-blue-50"
-            data-testid="button-buy-calls"
-            onClick={() => console.log('Buy Calls clicked')}
-          >
-            BUY CALLS
-          </Button>
-          <Button
-            variant="outline"
-            className="bg-white border-2 border-white text-green-700 hover:bg-blue-50"
-            data-testid="button-sell-calls"
-            onClick={() => console.log('Sell Calls clicked')}
-          >
-            SELL CALLS
-          </Button>
+            <Button
+              variant="outline"
+              className="bg-white border-2 border-white text-green-700 hover:bg-blue-50"
+              data-testid="button-buy-calls"
+              onClick={() => console.log('Buy Calls clicked')}
+            >
+              BUY CALLS
+            </Button>
+            <Button
+              variant="outline"
+              className="bg-white border-2 border-white text-green-700 hover:bg-blue-50"
+              data-testid="button-sell-calls"
+              onClick={() => console.log('Sell Calls clicked')}
+            >
+              SELL CALLS
+            </Button>
           </div>
 
+          {/* Mobile Menu Button */}
           <button
             className="lg:hidden"
             data-testid="button-mobile-menu"
@@ -120,6 +127,7 @@ export default function Header() {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t bg-background">
           <div className="px-6 py-4 space-y-3">
@@ -134,6 +142,16 @@ export default function Header() {
                 </button>
               </div>
             ))}
+
+            {/* Mobile Contact Us → Email */}
+            <button
+              className="w-full text-left font-medium py-2"
+              onClick={() => (window.location.href = "mailto:shoaibkhan@leaderscoverage.com")}
+              data-testid="button-mobile-contact"
+            >
+              Contact Us
+            </button>
+
             <div className="flex flex-col gap-2 pt-4">
               <Button variant="outline" className="w-full border-primary text-primary" data-testid="button-mobile-buy">
                 BUY CALLS

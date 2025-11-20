@@ -72,10 +72,21 @@ export default function Footer() {
         </div>
 
         <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Pay Per Calls" className="w-10 h-10 rounded-full object-cover" />
-            <span className="font-bold">Pay Per Calls</span>
+          <div className="flex flex-col md:flex-row items-center md:items-center gap-3 text-center md:text-left">
+            <div className="flex items-center gap-3">
+              <img src="/logo.png" alt="Pay Per Calls" className="w-10 h-10 rounded-full object-cover" />
+              <span className="font-bold">Pay Per Calls</span>
+            </div>
+
+            {/* ✅ Contact Email Added */}
+            <a
+              href="mailto:shoaibkhan@leaderscoverage.com"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors mt-2 md:mt-0"
+            >
+              Contact: shoaibkhan@leaderscoverage.com
+            </a>
           </div>
+
           <p className="text-sm text-muted-foreground">
             © 2025 Pay Per Calls™. All rights reserved.
           </p>
